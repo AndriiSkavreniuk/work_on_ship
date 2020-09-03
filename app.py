@@ -1,6 +1,5 @@
 from flask import Flask
-from app import app
-from app import db
+from app import app, db
 from app.models import User
 
 
