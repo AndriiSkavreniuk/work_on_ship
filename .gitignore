@@ -3,3 +3,5 @@ app/static/images/sasha_1.JPG
 app/static/images/sasha_2.JPG
 app/static/images/sasha_3.JPG
 app/static/images/video_1.MOV
+app.db
+app/templates/index_try.html
