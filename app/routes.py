@@ -3,10 +3,11 @@ from app.forms import MeinForm
 from app import app, db
 from app.models import User, Admin
 from flask_login import logout_user, login_user
-
+from flask_mail import Message
+from app import mail
+from config import Config
 
 from app.forms import LoginForm
-
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -21,6 +22,9 @@ def index():
         db.session.add(order)
         db.session.commit()
         flash('Вашу заявку прийнято.')
+        msg = Message(subject='New worker', recipients=[Config.ADMINS])
+        msg.body = render_template('new_user_email.txt', order=order)
+        mail.send(msg)
         return redirect(url_for('index'))
     return render_template('index.html', form=form)
 
@@ -43,3 +47,6 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('index'))
+
+
+

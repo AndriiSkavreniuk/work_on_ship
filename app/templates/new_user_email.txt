@@ -1,0 +1,7 @@
+Dear Sasha,
+ you have new worker
+
+{{order}}
+
+
+The work_on_ship admin
