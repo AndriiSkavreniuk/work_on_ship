@@ -1,0 +1,92 @@
+2020-09-04 20:13:50,279 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/andrii/PycharmProjects/work_on_ship/app/routes.py", line 27, in index
+    mail.send(msg)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 190, in send
+    message.as_bytes() if PY3 else message.as_string(),
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 385, in as_bytes
+    return self._message().as_bytes()
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 314, in _message
+    msg = self._mimetext(self.body)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 303, in _mimetext
+    return MIMEText(text, _subtype=subtype, _charset=charset)
+  File "/usr/lib/python3.8/email/mime/text.py", line 42, in __init__
+    self.set_payload(_text, _charset)
+  File "/usr/lib/python3.8/email/message.py", line 321, in set_payload
+    self.set_charset(charset)
+  File "/usr/lib/python3.8/email/message.py", line 356, in set_charset
+    cte(self)
+  File "/usr/lib/python3.8/email/encoders.py", line 60, in encode_7or8bit
+    orig.decode('ascii')
+AttributeError: 'User' object has no attribute 'decode'
+2020-09-04 20:15:29,023 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
+2020-09-04 20:15:39,804 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/andrii/PycharmProjects/work_on_ship/app/routes.py", line 26, in index
+    msg.body = render_template('new_user_email.txt', order)
+TypeError: render_template() takes 1 positional argument but 2 were given
+2020-09-04 20:16:32,625 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
+2020-09-04 20:20:12,042 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
+2020-09-05 12:42:01,119 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
+2020-09-05 12:42:26,681 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/andrii/PycharmProjects/work_on_ship/app/routes.py", line 27, in index
+    mail.send(msg)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/usr/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 308, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+2020-09-05 12:45:27,005 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
