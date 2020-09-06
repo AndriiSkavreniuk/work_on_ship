@@ -12,7 +12,7 @@ class User(db.Model):
     number = db.Column(db.String(64))
 
     def __repr__(self):
-        return '<User {}>'.format(self.first_name)
+        return 'User (%s, %s)' % (self.first_name, self.number)
 
 
 class Admin(UserMixin, db.Model):

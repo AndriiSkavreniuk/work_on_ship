@@ -1,32 +1,4 @@
-2020-09-04 18:07:51,869 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
-Traceback (most recent call last):
-  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/andrii/PycharmProjects/work_on_ship/app/routes.py", line 27, in index
-    mail.send(msg)
-  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 492, in send
-    message.send(connection)
-  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 427, in send
-    connection.send(self)
-  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 181, in send
-    if message.has_bad_headers():
-  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 400, in has_bad_headers
-    headers = [self.sender, self.reply_to] + self.recipients
-TypeError: can only concatenate list (not "str") to list
-2020-09-04 18:18:44,109 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
-2020-09-04 18:26:28,028 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
-2020-09-04 18:50:07,648 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
-2020-09-04 18:50:19,616 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
+2020-09-04 19:12:35,225 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -51,9 +23,34 @@ Traceback (most recent call last):
   File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 400, in has_bad_headers
     headers = [self.sender, self.reply_to] + self.recipients
 TypeError: can only concatenate list (not "str") to list
-2020-09-04 18:51:07,060 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
-2020-09-04 18:55:43,587 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
-2020-09-04 18:55:56,391 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
+2020-09-04 19:14:25,176 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
+2020-09-04 19:14:37,489 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/andrii/PycharmProjects/work_on_ship/app/routes.py", line 28, in index
+    mail.send(msg)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 181, in send
+    if message.has_bad_headers():
+  File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 400, in has_bad_headers
+    headers = [self.sender, self.reply_to] + self.recipients
+TypeError: can only concatenate list (not "str") to list
+2020-09-04 19:15:22,477 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
+2020-09-04 19:15:34,151 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -90,8 +87,8 @@ Traceback (most recent call last):
   File "/usr/lib/python3.8/email/encoders.py", line 60, in encode_7or8bit
     orig.decode('ascii')
 AttributeError: 'User' object has no attribute 'decode'
-2020-09-04 19:09:58,829 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
-2020-09-04 19:10:10,504 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
+2020-09-04 19:16:25,745 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
+2020-09-04 19:16:37,818 ERROR: Exception on /index [POST] [in /home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -105,7 +102,7 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/andrii/PycharmProjects/work_on_ship/app/routes.py", line 29, in index
+  File "/home/andrii/PycharmProjects/work_on_ship/app/routes.py", line 28, in index
     mail.send(msg)
   File "/home/andrii/PycharmProjects/work_on_ship/venv/lib/python3.8/site-packages/flask_mail.py", line 492, in send
     message.send(connection)
@@ -128,4 +125,4 @@ Traceback (most recent call last):
   File "/usr/lib/python3.8/email/encoders.py", line 60, in encode_7or8bit
     orig.decode('ascii')
 AttributeError: 'User' object has no attribute 'decode'
-2020-09-04 19:12:25,324 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
+2020-09-04 19:17:31,367 INFO: Work_on_ship startup [in /home/andrii/PycharmProjects/work_on_ship/app/__init__.py:46]
